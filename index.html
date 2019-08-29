@@ -276,89 +276,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<font face="微软雅黑" size="5">  
-
-<h1 id="一、打开Markdown右侧预览"><a href="#一、打开Markdown右侧预览" class="headerlink" title="一、打开Markdown右侧预览"></a>一、打开Markdown右侧预览</h1><ol>
-<li>Ctrl+Shift+P  </li>
-<li>输入Markdown  </li>
-<li>选择侧边预览</li>
-</ol>
-<h1 id="二、标题的使用"><a href="#二、标题的使用" class="headerlink" title="二、标题的使用"></a>二、标题的使用</h1><p> 标题的使用有两种格式： </p>
-<ol>
-<li><p>使用 <font color="#FF0033">#</font>号来表示1-6级标题，一个等级对应#号，二级标题对应##号，以此类推，等级越小，字号越大。（常用）<br> #一级标题<br> ##二级标题<br> ###三级标题<br> ####四级标题<br> #####五级标题<br> ######六级标题  </p>
-</li>
-<li><p>使用<font color="#FF0033">=和-</font>表示一级和二级标题。<br>  =========一级标题<br>  —————–二级标题  </p>
-</li>
-</ol>
-<h1 id="三、段落的使用"><a href="#三、段落的使用" class="headerlink" title="三、段落的使用"></a>三、段落的使用</h1><p>  两种方式 </p>
-<ol>
-<li>在一个段落后使用<font color="#FF0033">空行</font>来表示一个新的段落。 如：<br>这是第一个段落<br>空行<br>这是第二个段落   </li>
-<li>在一个段落后填加<font color="#FF0033">两个空格</font>。  </li>
-</ol>
-<h1 id="四、字体的使用"><a href="#四、字体的使用" class="headerlink" title="四、字体的使用"></a>四、字体的使用</h1><ol>
-<li>斜体文本： *斜体文本*  或 _ 斜体文本_  </li>
-<li>粗体文本：**斜体文本** 或 __ 斜体文本__   </li>
-<li>粗斜体文本：***粗斜体文本*** 或___粗斜体文本___  </li>
-</ol>
-<h1 id="五、分割线的使用"><a href="#五、分割线的使用" class="headerlink" title="五、分割线的使用"></a>五、分割线的使用</h1><p>  在一行中使用<font color="#FF0033">三个及三个以上的星号、减号、底线</font>来建立一个分割线，也可以在<font color="#FF0033">星号或是减号中间插入空格。</font><br>     *   *  *<br>     --------<br>     -     -     -   </p>
-<h1 id="六、删除线"><a href="#六、删除线" class="headerlink" title="六、删除线"></a>六、删除线</h1><p>  文字要添加删除线，只需要在文字两端<font color="#FF0033">添加两个波浪线：</font><br>     <del>ABC</del> :~~AABC~~  </p>
-<h1 id="七、下划线"><a href="#七、下划线" class="headerlink" title="七、下划线"></a>七、下划线</h1><p>  下划线利HTML中的<font color="#FF0033">&lt;u&gt;</font>标签来实现：  </p>
-<p> <u>带下划线文本</u>: &lt;u&gt;带下划线文本&lt;/u&gt;  </p>
-<h1 id="八、区块引用"><a href="#八、区块引用" class="headerlink" title="八、区块引用"></a>八、区块引用</h1><p>  区块引用是在段落开头使用<font color="#FF0033">&gt;</font>符号,后面紧跟<font color="#FF0033">一个空格符号：</font><br>     &gt;（紧跟一个空格）区块引用  </p>
-<p>  显示效果：<br>     &gt; ABCDEF<br>     &gt;abcdef </p>
-<h2 id="区块嵌套"><a href="#区块嵌套" class="headerlink" title="区块嵌套"></a>区块嵌套</h2><p>  &gt; 最外层嵌套<br>  &gt;&gt; 第一层嵌套<br>  &gt;&gt;&gt; 第三层嵌套  </p>
-<p>   显示效果:<br>     &gt; 最外层嵌套<br>     &gt;&gt; 第一层嵌套<br>     &gt;&gt;&gt; 第三层嵌套  </p>
-<h2 id="区块中可以正常使用列表"><a href="#区块中可以正常使用列表" class="headerlink" title="区块中可以正常使用列表"></a>区块中可以正常使用列表</h2><p>  &gt; 区块中使用列表<br>  &gt; 1. 第一项<br>  &gt; 2. 第二项<br>  &gt; * 第一项<br>  &gt; * 第二项  </p>
-<p>   显示效果：<br>     &gt; ABCD<br>     &gt; 1. a<br>     &gt; 2. b<br>     &gt; * c<br>     &gt; * d    </p>
-<h1 id="九、列表中使用区块"><a href="#九、列表中使用区块" class="headerlink" title="九、列表中使用区块"></a>九、列表中使用区块</h1><p>  需要<font color="#FF0033">在&gt;前加4个空格的缩进：</font><br>     * 第一项<br>       (此处4个空格)&gt; 区块1<br>       (此处4个空格)&gt; 区块2<br>     * 第二项  </p>
-<p>   显示效果：<br>     * AB<br>         &gt; abcd<br>         &gt; efdg<br>     * CD   </p>
-<h1 id="十、超链接"><a href="#十、超链接" class="headerlink" title="十、超链接"></a>十、超链接</h1><p>  <font color="#FF0033">[链接名称](链接地址): </font>  </p>
-<p>  [百度](<a href="https://www.so.com/s?q=%E7%99%BE%E5%BA%A6&amp;ie=utf-8&amp;src=se7_newtab_new" target="_blank" rel="noopener">https://www.so.com/s?q=%E7%99%BE%E5%BA%A6&amp;ie=utf-8&amp;src=se7_newtab_new</a>) </p>
-<h1 id="十一、图片"><a href="#十一、图片" class="headerlink" title="十一、图片"></a>十一、图片</h1><p>   <font color="#FF0033">![图片替换文字](图片地址):</font>  </p>
-<p>   ![风景](<a href="http://p19.qhimgs3.com/sdm/240_240_/t011f9ef122471700d2.jpg?t=1564386096" target="_blank" rel="noopener">http://p19.qhimgs3.com/sdm/240_240_/t011f9ef122471700d2.jpg?t=1564386096</a>)  </p>
-<h1 id="十二、列表"><a href="#十二、列表" class="headerlink" title="十二、列表"></a>十二、列表</h1><p>  列表分为<font color="#FF0033">有序列表</font>和<font color="#FF0033">无序列表</font>两种<br> 1.无序列表<br>     无序列表使用<font color="#FF0033">星号、加号、减号（紧跟一个空格）</font>作为标记：<br>     * 第一项<br>     * 第二项  </p>
-<pre><code>\+ 第一项  
-\+ 第二项  
-
-\- 第一项  
-\- 第二项  
-
-显示效果均为：  
-* 第一项  
-* 第二项  </code></pre><p> 2.有序列表<br>     有序列表用<font color="#FF0033">数字加.（还要紧跟一个空格）</font>表示：<br>      1. 第一项<br>      2. 第二项</p>
-<p> 3.列表嵌套<br>     1. 第一项<br>     (此处有四个空格) * 第一项嵌套的第一个元素<br>     （此处有四个空格）* 第一个嵌套的第二个元素  </p>
-<pre><code>显示效果：  
-1. 第一项  
-    * 第一项嵌套的第一个元素  
-    * 第一项嵌套的第二个元素 </code></pre><h1 id="十三、代码区块"><a href="#十三、代码区块" class="headerlink" title="十三、代码区块"></a>十三、代码区块</h1><p>  使用<font color="#FF0033">4个空格或者一个制表符（Tab键）</font>  </p>
-<p>  显示效果：  </p>
-<pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=446935665&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;  </code></pre><h1 id="十四、表格"><a href="#十四、表格" class="headerlink" title="十四、表格"></a>十四、表格</h1><p>  <font color="#FF0033"> | </font>来分隔不同的单元格，使用<font color="#FF0033"> - </font>来分隔表头和其他行。<br>     |  表头  | 表头  |<br>     |  — |  —    |<br>     | 单元格 |单元格|<br>     |  单元格|单元格  |  </p>
-<p>  对齐方式:<br>     | 左对齐 | 右对齐 | 居中对齐|<br>     | :—- | —-: | :—-: |<br>     | 单元格 | 单元格 | 单元格 |<br>     | 单元格 | 单元格 | 单元格 |  </p>
-<h1 id="十五、转义"><a href="#十五、转义" class="headerlink" title="十五、转义"></a>十五、转义</h1><p>  特殊符号需要正常显示的话，可以使用<font color="#FF0033">转义符号（\）</font></p>
-<h1 id="十六、添加音乐"><a href="#十六、添加音乐" class="headerlink" title="十六、添加音乐"></a>十六、添加音乐</h1><p>  在网易云音乐找到一首音乐，生成<font color="#FF0033">外链播放器</font>，然后粘贴html中代码放在MD文档代码的最后，如：</p>
-<pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=446935665&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;   </code></pre><hr>
-<hr>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=446935665&auto=0&height=66"></iframe>
-
-</font>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <font face="微软雅黑" size="5">
+# Markdown书写规则
+        
+          <a class="article-more-a" href="/2019/08/24/Markdown书写规则/#more">more >></a>
+        
       
    <!-- 增加版权声明 -->   
 
