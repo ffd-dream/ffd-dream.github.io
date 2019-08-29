@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Markdown书写规则">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-08-29T12:28:42.887Z">
+<meta property="og:updated_time" content="2019-08-29T12:35:20.897Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown书写规则">
 <meta name="twitter:description" content="Markdown书写规则">
@@ -208,8 +208,9 @@
 <h1 id="二、标题的使用"><a href="#二、标题的使用" class="headerlink" title="二、标题的使用"></a>二、标题的使用</h1><p> 标题的使用有两种格式： </p>
 <p> 1.使用 <font color="#FF0033">#</font>号来表示1-6级标题，一个等级对应#号，二级标题对应##号，以此类推，等级越小，字号越大。（常用）<br>     #一级标题<br>     ##二级标题<br>     ###三级标题<br>     ####四级标题<br>     #####五级标题<br>     ######六级标题</p>
 <p> 2.使用<font color="#FF0033">=和-</font>表示一级和二级标题。<br>      =========一级标题<br>      —————–二级标题  </p>
-<h1 id="三、段落的使用"><a href="#三、段落的使用" class="headerlink" title="三、段落的使用"></a>三、段落的使用</h1><p>  两种方式<br>     1.在一个段落后使用<font color="#FF0033">空行</font>来表示一个新的段落。 如：<br>     这是第一个段落<br>     空行<br>     这是第二个段落</p>
-<pre><code>2.在一个段落后填加&lt;font color=#FF0033&gt;两个空格&lt;/font&gt;。  </code></pre><h1 id="四、字体的使用"><a href="#四、字体的使用" class="headerlink" title="四、字体的使用"></a>四、字体的使用</h1><ol>
+<h1 id="三、段落的使用"><a href="#三、段落的使用" class="headerlink" title="三、段落的使用"></a>三、段落的使用</h1><p>  两种方式<br>  1.在一个段落后使用<font color="#FF0033">空行</font>来表示一个新的段落。 如：<br>     这是第一个段落<br>     空行<br>     这是第二个段落</p>
+<p>  2.在一个段落后填加<font color="#FF0033">两个空格</font>。  </p>
+<h1 id="四、字体的使用"><a href="#四、字体的使用" class="headerlink" title="四、字体的使用"></a>四、字体的使用</h1><ol>
 <li>斜体文本： *斜体文本*  或 _ 斜体文本_  </li>
 <li>粗体文本：**斜体文本** 或 __ 斜体文本__   </li>
 <li>粗斜体文本：***粗斜体文本*** 或___粗斜体文本___  </li>
@@ -274,7 +275,14 @@
 <li>第二项</li>
 </ol>
 <p>3.列表嵌套<br>     1. 第一项<br>     (此处有四个空格) * 第一项嵌套的第一个元素<br>     （此处有四个空格）* 第一个嵌套的第二个元素  </p>
-<p>显示效果：<br>  1.第一项<br>     * 第一项嵌套的第一个元素<br>     * 第一项嵌套的第二个元素 </p>
+<p>显示效果：  </p>
+<ol>
+<li>第一项  <ul>
+<li>第一项嵌套的第一个元素  </li>
+<li>第一项嵌套的第二个元素 </li>
+</ul>
+</li>
+</ol>
 <h1 id="十三、代码区块"><a href="#十三、代码区块" class="headerlink" title="十三、代码区块"></a>十三、代码区块</h1><p>  使用<font color="#FF0033">4个空格或者一个制表符（Tab键）</font>  </p>
 <p>  显示效果：  </p>
 <pre><code>&lt;iframe frameborder=&quot;no&quot; border=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; width=330 height=86 src=&quot;//music.163.com/outchain/player?type=2&amp;id=446935665&amp;auto=0&amp;height=66&quot;&gt;&lt;/iframe&gt;  </code></pre><h1 id="十四、表格"><a href="#十四、表格" class="headerlink" title="十四、表格"></a>十四、表格</h1><p>  <font color="#FF0033"> | </font>来分隔不同的单元格，使用<font color="#FF0033"> - </font>来分隔表头和其他行。<br>     |  表头  | 表头  |<br>     |  — |  —    |<br>     | 单元格 |单元格|<br>     |  单元格|单元格  |  </p>
