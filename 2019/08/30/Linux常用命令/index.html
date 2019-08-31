@@ -18,7 +18,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/08/30/Linux常用命令/img/mk-2019-08-31-09-17-44.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/30/Linux常用命令/img/mk-2019-08-31-09-18-46.png">
 <meta property="og:image" content="http://yoursite.com/2019/08/30/Linux常用命令/img/mk-2019-08-31-09-19-32.png">
-<meta property="og:updated_time" content="2019-08-31T01:19:49.695Z">
+<meta property="og:updated_time" content="2019-08-31T01:25:32.486Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令">
 <meta name="twitter:description" content="Linux常用命令">
@@ -234,55 +234,86 @@
 </li>
 </ul>
 <h1 id="2、ls-a命令："><a href="#2、ls-a命令：" class="headerlink" title="2、ls -a命令："></a>2、ls -a命令：</h1><ul>
-<li>显示当前目录下全部文件（包括隐含文件）。  <h1 id="3、cat命令："><a href="#3、cat命令：" class="headerlink" title="3、cat命令："></a>3、cat命令：</h1></li>
+<li>显示当前目录下全部文件（包括隐含文件）。  </li>
+</ul>
+<h1 id="3、cat命令："><a href="#3、cat命令：" class="headerlink" title="3、cat命令："></a>3、cat命令：</h1><ul>
 <li>cat [选项] 文件：显示参数文件的内容； </li>
-<li>cat 文件1  文件2&gt; 文件3：连接两个或多个文件（将文件1和文件2的内容合并起来，然后将他们放入文件3）。  <h1 id="4、more文件："><a href="#4、more文件：" class="headerlink" title="4、more文件："></a>4、more文件：</h1></li>
-<li>显示文件内容，每次显示一屏。<ul>
-<li>按Space键，显示文本的下一屏内容，</li>
-<li>按Enter键，只显示文本的下一行内容；</li>
-<li>按Q键退出命令。  <h1 id="5、less命令："><a href="#5、less命令：" class="headerlink" title="5、less命令："></a>5、less命令：</h1></li>
+<li>cat 文件1  文件2&gt; 文件3：连接两个或多个文件（将文件1和文件2的内容合并起来，然后将他们放入文件3）。  </li>
+</ul>
+<h1 id="4、more文件："><a href="#4、more文件：" class="headerlink" title="4、more文件："></a>4、more文件：</h1><ul>
+<li><p>显示文件内容，每次显示一屏。</p>
+<ul>
+<li><p>按Space键，显示文本的下一屏内容，</p>
+</li>
+<li><p>按Enter键，只显示文本的下一行内容；</p>
+</li>
+<li><p>按Q键退出命令。  </p>
+<h1 id="5、less命令："><a href="#5、less命令：" class="headerlink" title="5、less命令："></a>5、less命令：</h1></li>
 </ul>
 </li>
-<li>同more命令，可以分屏显示文件内容，但二者存在差异：less命令允许用户向前或向后浏览文件，而more只能向前浏览；<ul>
+<li><p>同more命令，可以分屏显示文件内容，但二者存在差异：less命令允许用户向前或向后浏览文件，而more只能向前浏览；</p>
+<ul>
 <li>PageUp键向上翻页；</li>
 <li>PageDown键向下翻页；</li>
-<li>Q键退出命令。  <h1 id="6、head命令："><a href="#6、head命令：" class="headerlink" title="6、head命令："></a>6、head命令：</h1></li>
+<li>Q键退出命令。  </li>
 </ul>
 </li>
-<li>head [行数] file :在屏幕上显示指定文件的开头若干行,行数默认值为10。  <h1 id="7、tail命令："><a href="#7、tail命令：" class="headerlink" title="7、tail命令："></a>7、tail命令：</h1></li>
+</ul>
+<h1 id="6、head命令："><a href="#6、head命令：" class="headerlink" title="6、head命令："></a>6、head命令：</h1><ul>
+<li>head [行数] file :在屏幕上显示指定文件的开头若干行,行数默认值为10。  </li>
+</ul>
+<h1 id="7、tail命令："><a href="#7、tail命令：" class="headerlink" title="7、tail命令："></a>7、tail命令：</h1><ul>
 <li>在屏幕上显示指定文件的末尾若干行，行数默认值为10。  </li>
 <li>tail +20 file1:显示file1文件的内容，从第20行到文件末尾。 </li>
-<li>tail -n 19 file2:显示文件file2倒数19行。  <h1 id="8、touch命令："><a href="#8、touch命令：" class="headerlink" title="8、touch命令："></a>8、touch命令：</h1></li>
+<li>tail -n 19 file2:显示文件file2倒数19行。  </li>
+</ul>
+<h1 id="8、touch命令："><a href="#8、touch命令：" class="headerlink" title="8、touch命令："></a>8、touch命令：</h1><ul>
 <li>修改指定文件的时间标签或者创建一个空文件。 </li>
-<li>touch -a:仅改变指定文件的存取时间。  <h1 id="9、comm命令："><a href="#9、comm命令：" class="headerlink" title="9、comm命令："></a>9、comm命令：</h1></li>
+<li>touch -a:仅改变指定文件的存取时间。  </li>
+</ul>
+<h1 id="9、comm命令："><a href="#9、comm命令：" class="headerlink" title="9、comm命令："></a>9、comm命令：</h1><ul>
 <li>对两个已排序文件进行逐行比较。 </li>
 <li>格式：comm [-123] file1 file2  <ul>
 <li>两个文件逐行比较，最后生成三列输出：仅在file1中出现的行，仅在file2中出现的行，在两个文件中都出现的行。 </li>
 <li>-123：选项1 2 3 分别表示不显示comm输出中的第一列，第二列，第三列。 </li>
 </ul>
 </li>
-<li>comm -12 file1 file2:比较文件file1和file2,并且只显示他们共有的行。  <h1 id="10、cp命令："><a href="#10、cp命令：" class="headerlink" title="10、cp命令："></a>10、cp命令：</h1></li>
+<li>comm -12 file1 file2:比较文件file1和file2,并且只显示他们共有的行。  </li>
+</ul>
+<h1 id="10、cp命令："><a href="#10、cp命令：" class="headerlink" title="10、cp命令："></a>10、cp命令：</h1><ul>
 <li>将源文件或目录复制到目标文件或目录中。 </li>
 <li>格式：cp [选项] 源文件/目录  目标文件/目录。  </li>
 <li>如果源文件是普通文件，则该命令把它复制到指定的目标文件； </li>
-<li>如果源文件是目录，就需要使用“-r”选项，将整个目录下所有文件和子目录都复制到目标位置。  <h1 id="11、rm命令："><a href="#11、rm命令：" class="headerlink" title="11、rm命令："></a>11、rm命令：</h1></li>
-<li>删除文件或目录。  <h1 id="12、wc命令："><a href="#12、wc命令：" class="headerlink" title="12、wc命令："></a>12、wc命令：</h1></li>
+<li>如果源文件是目录，就需要使用“-r”选项，将整个目录下所有文件和子目录都复制到目标位置。  </li>
+</ul>
+<h1 id="11、rm命令："><a href="#11、rm命令：" class="headerlink" title="11、rm命令："></a>11、rm命令：</h1><ul>
+<li>删除文件或目录。  </li>
+</ul>
+<h1 id="12、wc命令："><a href="#12、wc命令：" class="headerlink" title="12、wc命令："></a>12、wc命令：</h1><ul>
 <li>统计指定文件的字节数、字数、行数，并将统计结果显示出来。<ul>
 <li>-c：统计字节数  </li>
 <li>-l： 统计行数 </li>
-<li>-w： 统计字数   <h1 id="三、目录命令"><a href="#三、目录命令" class="headerlink" title="三、目录命令"></a>三、目录命令</h1><h1 id="1、pwd命令："><a href="#1、pwd命令：" class="headerlink" title="1、pwd命令："></a>1、pwd命令：</h1></li>
+<li>-w： 统计字数   </li>
 </ul>
 </li>
+</ul>
+<h1 id="三、目录命令"><a href="#三、目录命令" class="headerlink" title="三、目录命令"></a>三、目录命令</h1><h1 id="1、pwd命令："><a href="#1、pwd命令：" class="headerlink" title="1、pwd命令："></a>1、pwd命令：</h1><ul>
 <li>显示当前工作目录的绝对路径名。<br><img src="img/mk-2019-08-31-09-18-46.png" alt><h1 id="2、mkdir命令："><a href="#2、mkdir命令：" class="headerlink" title="2、mkdir命令："></a>2、mkdir命令：</h1></li>
 <li>创建目录。<br><img src="img/mk-2019-08-31-09-19-32.png" alt>  <h1 id="3、rmdir命令："><a href="#3、rmdir命令：" class="headerlink" title="3、rmdir命令："></a>3、rmdir命令：</h1></li>
-<li>删除目录。  <h1 id="4、cd命令"><a href="#4、cd命令" class="headerlink" title="4、cd命令:"></a>4、cd命令:</h1></li>
+<li>删除目录。  </li>
+</ul>
+<h1 id="4、cd命令"><a href="#4、cd命令" class="headerlink" title="4、cd命令:"></a>4、cd命令:</h1><ul>
 <li>改变工作目录。 <ul>
 <li>将当前目录改到/home/liu：<br>$ cd /home/liu </li>
 <li>将当前目录改到用户的主目录：<br>$ cd  </li>
-<li>将当前目录向上移动两级：<br>$ ../..   <h1 id="5、ln命令："><a href="#5、ln命令：" class="headerlink" title="5、ln命令："></a>5、ln命令：</h1></li>
+<li>将当前目录向上移动两级：<br>$ ../..   </li>
 </ul>
 </li>
-<li>用来创建链接命令。  <h1 id="6、chmod命令："><a href="#6、chmod命令：" class="headerlink" title="6、chmod命令："></a>6、chmod命令：</h1></li>
+</ul>
+<h1 id="5、ln命令："><a href="#5、ln命令：" class="headerlink" title="5、ln命令："></a>5、ln命令：</h1><ul>
+<li>用来创建链接命令。  </li>
+</ul>
+<h1 id="6、chmod命令："><a href="#6、chmod命令：" class="headerlink" title="6、chmod命令："></a>6、chmod命令：</h1><ul>
 <li>用于改变或设置文件或目录的存取权限。（只有文文件主或超级用户才有权用chmod命令改变文件或目录的存取权限。）<br>(1)用符号模式来改变权限   </li>
 <li>u:用户（user），即文件或目录的所有者； </li>
 <li>g：同组用户（group）,即与文件属性主有相同ID的所有用户；  </li>
