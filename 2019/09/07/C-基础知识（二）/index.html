@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="C++基础知识（二）">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T12:05:26.765Z">
+<meta property="og:updated_time" content="2019-09-11T12:13:26.156Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++基础知识（二）">
 <meta name="twitter:description" content="C++基础知识（二）">
@@ -66,7 +66,7 @@
 			</ul>
 		</nav>
 		<nav>
-			总文章数 5
+			总文章数 6
 		</nav>
 		<nav class="header-smart-menu">
     		
@@ -194,8 +194,8 @@
 </ul>
 <pre><code>//此处为头文件
 int main ()
- {
-int  var = 20;   // 实际变量的声明
+{
+ int  var = 20;   // 实际变量的声明
 int  *ip;        // 指针变量的声明
 
 ip = &amp; var;       // 在指针变量中存储 var 的地址
@@ -224,10 +224,10 @@ Value of *ip variable: 20</code></pre></li>
 <h1 id="十二、指针的比较"><a href="#十二、指针的比较" class="headerlink" title="十二、指针的比较"></a>十二、指针的比较</h1><ul>
 <li><p>重点复习以下程序</p>
 <pre><code>//此处为头文件
-using namespace std;
-const int MAX = 3;
+ using namespace std;
+ const int MAX = 3;
 
-int main ()
+ int main ()
 {
 int  var[MAX] = {10, 100, 200};
 int  *ptr;
@@ -251,11 +251,11 @@ return 0;
 }   </code></pre></li>
 <li><p>编译执行结果如下：</p>
 <pre><code>Address of var[0] = 0xbfce42d0
-Value of var[0] = 10
-Address of var[1] = 0xbfce42d4
-Value of var[1] = 100
-Address of var[2] = 0xbfce42d8
-Value of var[2] = 200  </code></pre></li>
+ Value of var[0] = 10
+ Address of var[1] = 0xbfce42d4
+ Value of var[1] = 100
+ Address of var[2] = 0xbfce42d8
+ Value of var[2] = 200  </code></pre></li>
 </ul>
 <h1 id="十三、指针数组"><a href="#十三、指针数组" class="headerlink" title="十三、指针数组"></a>十三、指针数组</h1><ul>
 <li><p>可以让数组存储指向 int 或 char 或其他数据类型的指针。下面是一个指向整数的指针数组的声明：  </p>
@@ -268,10 +268,10 @@ Value of var[2] = 200  </code></pre></li>
 </li>
 <li><p>1、指向整数的指针数组：  </p>
 <pre><code>//此处为头文件
-const int MAX = 3;
+ const int MAX = 3;
 
-int main ()
-{
+ int main ()
+ {
 int  var[MAX] = {10, 100, 200};
 int *ptr[MAX];
 
@@ -292,20 +292,20 @@ return 0;
 <ul>
 <li><p>方法1：</p>
 <pre><code>Value of var[0] = 10
-Value of var[1] = 100
-Value of var[2] = 200  </code></pre></li>
+ Value of var[1] = 100
+ Value of var[2] = 200  </code></pre></li>
 <li><p>方法2：</p>
 <pre><code>Value of var[0] = 0x7ffeeced53a0
-Value of var[1] = 0x7ffeeced53a4
-Value of var[2] = 0x7ffeeced53a8  </code></pre></li>
+ Value of var[1] = 0x7ffeeced53a4
+ Value of var[2] = 0x7ffeeced53a8  </code></pre></li>
 </ul>
 </li>
 <li><p>2、指向字符的指针数组  </p>
 <pre><code>//此处为头文件
 
-void pointerArray();
-void pointerArray4Char();
-const int MAX = 3;
+ void pointerArray();
+ void pointerArray4Char();
+ const int MAX = 3;
 
 int main(void){
 // pointerArray();
@@ -333,17 +333,17 @@ cout &lt;&lt; *(names[i]+1) &lt;&lt; endl;
 }</code></pre></li>
 <li><p>运行结果： </p>
 <pre><code>Value of names[0] = sun
-Value of *names[0] = s
-Value of *names[0]+1 = 116
-Value of *(names[0]+1) = u
-Value of names[1] = bin
-Value of *names[1] = b
-Value of *names[1]+1 = 99
-Value of *(names[1]+1) = i
-Value of names[2] = sunbin
-Value of *names[2] = s
-Value of *names[2]+1 = 116
-Value of *(names[2]+1) = u  </code></pre></li>
+ Value of *names[0] = s
+ Value of *names[0]+1 = 116
+ Value of *(names[0]+1) = u
+ Value of names[1] = bin
+ Value of *names[1] = b
+ Value of *names[1]+1 = 99
+ Value of *(names[1]+1) = i
+ Value of names[2] = sunbin
+ Value of *names[2] = s
+ Value of *names[2]+1 = 116
+ Value of *(names[2]+1) = u  </code></pre></li>
 </ul>
 <h1 id="十四、指针数组和数组指针的区别"><a href="#十四、指针数组和数组指针的区别" class="headerlink" title="十四、指针数组和数组指针的区别"></a>十四、指针数组和数组指针的区别</h1><ul>
 <li><p>1、优先级关系：[] = () &gt; *  </p>
@@ -398,9 +398,9 @@ Value of *(names[2]+1) = u  </code></pre></li>
 </li>
 <li><p>获取引用地址时，编译器会进行内部转换。  </p>
 <pre><code>int num=108;  
-int $ rel_num=num;  
-rel_num=118;  
-cout&lt;&lt; &amp;num &lt;&lt; &apos;\t&apos;&lt;&lt; &amp;rel_num&lt;&lt; endl;  </code></pre><p>等价于：  </p>
+ int $ rel_num=num;  
+ rel_num=118;  
+ cout&lt;&lt; &amp;num &lt;&lt; &apos;\t&apos;&lt;&lt; &amp;rel_num&lt;&lt; endl;  </code></pre><p>等价于：  </p>
 </li>
 </ul>
 <pre><code>int num=108;  
