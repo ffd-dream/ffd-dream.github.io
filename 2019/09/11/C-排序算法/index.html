@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="C++排序算法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T12:22:45.198Z">
+<meta property="og:updated_time" content="2019-09-11T12:26:00.292Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++排序算法">
 <meta name="twitter:description" content="C++排序算法">
@@ -199,17 +199,17 @@ int nums[]={16,25,90,23,9};
 for(int j=0; j&lt; N-1; i++)  //外层循环控制比较的轮数
 {
 
-  for(int j=0;j&lt; N-i-1;j++)  //内层循环控制每轮的比较和交换 
-  {
-     if(nums[ j ] &lt; nums[ j+1 ])
-     {
-     //交换  
-     temp=nums[ j ];  
-     nums[ j ]=nums[ j+1];
-     nums[j +1]=temp;
-      }
-    }
-}</code></pre></li>
+ for(int j=0;j&lt; N-i-1;j++)  //内层循环控制每轮的比较和交换 
+ {
+    if(nums[ j ] &lt; nums[ j+1 ])
+    {
+    //交换  
+    temp=nums[ j ];  
+    nums[ j ]=nums[ j+1];
+    nums[j +1]=temp;
+     }
+   }
+ }</code></pre></li>
 </ul>
 <h1 id="二、排序"><a href="#二、排序" class="headerlink" title="二、排序"></a>二、排序</h1><pre><code>// 正序  
 int nums=[ ] {8,4,2,1,23,23,344,12};  
@@ -321,8 +321,8 @@ for (int i = 0; i &lt; srcLen; i++)
 {
     cout &lt;&lt; src[i] &lt;&lt; endl;
 }
-return 0;</code></pre><p>}</p>
-
+return 0;
+}</code></pre>
       
    <!-- 增加版权声明 -->   
 
