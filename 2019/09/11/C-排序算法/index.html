@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="C++排序算法">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T12:11:20.152Z">
+<meta property="og:updated_time" content="2019-09-11T12:22:45.198Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++排序算法">
 <meta name="twitter:description" content="C++排序算法">
@@ -255,7 +255,74 @@ cout &lt;&lt; &quot;逆序后：&quot; &lt;&lt; emdl;
 for(int i=0;i &lt; numsLen; i++)
 {
   cout &lt;&lt; nums[i] &lt;&lt; endl ;
-}</code></pre>
+}</code></pre><h1 id="三、数组的插入"><a href="#三、数组的插入" class="headerlink" title="三、数组的插入"></a>三、数组的插入</h1><pre><code>#include &quot;iostream&quot;
+using namespace std;
+
+int main()
+{
+double src[99]; //数组必须动态给值，不能直接赋值，
+int srcLen = 0;  //数组的长度
+double index;  //要插入的数
+int insertIndex = 0;//默认插入到第一个位置
+double temp;  //交换空间
+src[0] = 21; srcLen++;
+src[1] = 42; srcLen++;
+src[2] = 46; srcLen++;
+src[3] = 74; srcLen++;
+src[4] = 98; srcLen++;
+//冒泡排序算法
+
+//外循环控制轮数
+for (int i = 0; i &lt; srcLen - 1; i++)
+{
+    //内循环控制比较的次数
+    for (int j = 0; j &lt; srcLen - 1 - i; j++)
+    {
+        if (src[j]&gt;src[j + 1])
+        {
+            temp = src[j];
+            src[j] = src[j + 1];
+            src[j + 1] = temp;
+        }
+    }
+}
+cout &lt;&lt; &quot;插入前：&quot; &lt;&lt; endl;
+for (int i = 0; i &lt; srcLen; i++)
+{
+    cout &lt;&lt; src[i] &lt;&lt; endl;
+}
+//数组的插入
+
+//1.找出第一个比要插入的数大的数的序列insertIndex;
+
+cout &lt;&lt; &quot;请输入要插入的数：&quot;;
+    cin &gt;&gt; index;
+ insertIndex=srcLen;  //如果插入的数比数组中的数都大，则默认插入最后的位置
+for (int i = 0; i &lt; srcLen; i++)
+{
+    if (src[i] &gt; index)
+    {
+        insertIndex = i;
+        break; //找到第一个大的就跳出
+    }
+}
+
+//2.从最后的数到insertInde位置上的数以此往后移动一个位置；
+for (int i = srcLen - 1; i &gt;=insertIndex; i--) //只能由右往左，最后一个数向右移动之后把空间空出来给左边的数。
+{
+    src[i + 1] = src[i];
+}
+//3.把insertIndex赋给要插入数字的下标；
+src[insertIndex] = index;
+//4.将数组的总长度+1；
+srcLen=srcLen+1;
+cout &lt;&lt; &quot;插入后：&quot; &lt;&lt; endl;
+for (int i = 0; i &lt; srcLen; i++)
+{
+    cout &lt;&lt; src[i] &lt;&lt; endl;
+}
+return 0;</code></pre><p>}</p>
+
       
    <!-- 增加版权声明 -->   
 
@@ -393,7 +460,7 @@ for(int i=0;i &lt; numsLen; i++)
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-排序算法"><span class="toc-number">1.</span> <span class="toc-text">C++排序算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、冒泡算法"><span class="toc-number">2.</span> <span class="toc-text">一、冒泡算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、排序"><span class="toc-number">3.</span> <span class="toc-text">二、排序</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#C-排序算法"><span class="toc-number">1.</span> <span class="toc-text">C++排序算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一、冒泡算法"><span class="toc-number">2.</span> <span class="toc-text">一、冒泡算法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、排序"><span class="toc-number">3.</span> <span class="toc-text">二、排序</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、数组的插入"><span class="toc-number">4.</span> <span class="toc-text">三、数组的插入</span></a></li></ol>
                     </div>
                 </span>
             </div>
