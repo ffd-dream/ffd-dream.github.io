@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="C++基础知识（二）">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-11T10:47:26.202Z">
+<meta property="og:updated_time" content="2019-09-11T11:19:36.532Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++基础知识（二）">
 <meta name="twitter:description" content="C++基础知识（二）">
@@ -190,10 +190,9 @@
         <h1 id="C-基础知识（二）"><a href="#C-基础知识（二）" class="headerlink" title="C++基础知识（二）"></a>C++基础知识（二）</h1><a id="more"></a>  
 
 <h1 id="十、指针-和-amp-的使用"><a href="#十、指针-和-amp-的使用" class="headerlink" title="十、指针*和&amp;的使用"></a>十、指针*和&amp;的使用</h1><ul>
-<li><p>重点理解以下程序 </p>
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
-
+<li>重点理解以下程序 </li>
+</ul>
+<pre><code>//此处为头文件
 int main ()
  {
 int  var = 20;   // 实际变量的声明
@@ -213,7 +212,7 @@ cout &lt;&lt; &quot;Value of *ip variable: &quot;;
 cout &lt;&lt; *ip &lt;&lt; endl;
 
 return 0;
-}  </code></pre></li>
+}  </code></pre><ul>
 <li><p>运行结果：  </p>
 <pre><code>Value of var variable: 20
 Address stored in ip variable: 0xbfc601ac
@@ -223,9 +222,9 @@ Value of *ip variable: 20</code></pre></li>
 <li>在程序中比较喜欢使用指针代替数组，因为<font color="#FF0033">变量指针可以递增，而数组不能递增，因为数组是一个常量指针。</font>  </li>
 </ul>
 <h1 id="十二、指针的比较"><a href="#十二、指针的比较" class="headerlink" title="十二、指针的比较"></a>十二、指针的比较</h1><ul>
-<li><p>重点复习以下程序</p>
-<pre><code>#include &lt;iostream&gt;
-
+<li>重点复习以下程序</li>
+</ul>
+<pre><code>//此处为头文件
 using namespace std;
 const int MAX = 3;
 
@@ -250,7 +249,7 @@ ptr++;
 i++;
 }
 return 0;
-}   </code></pre></li>
+}   </code></pre><ul>
 <li><p>编译执行结果如下：</p>
 <pre><code>Address of var[0] = 0xbfce42d0
 Value of var[0] = 10
@@ -269,8 +268,7 @@ Value of var[2] = 200  </code></pre></li>
 </ul>
 </li>
 <li><p>1、指向整数的指针数组：  </p>
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
+<pre><code>//此处为头文件
 const int MAX = 3;
 
 int main ()
@@ -304,8 +302,7 @@ Value of var[2] = 0x7ffeeced53a8  </code></pre></li>
 </ul>
 </li>
 <li><p>2、指向字符的指针数组  </p>
-<pre><code>#include &lt;iostream&gt;
-using namespace std;
+<pre><code>//此处为头文件
 
 void pointerArray();
 void pointerArray4Char();
@@ -405,11 +402,10 @@ Value of *(names[2]+1) = u  </code></pre></li>
 int$ rel_num=num;  
 rel_num=118;  
  cout&lt;&lt; &amp;num &lt;&lt; &apos;\t&apos;&lt;&lt; &amp;rel_num&lt;&lt; endl;  </code></pre><p>等价于：  </p>
-<p> int num=108;<br> int *rel_num= &amp; num;  </p>
-<ul>
-<li>rel_num=118;<br>cout&lt;&lt; &amp;num &lt;&lt; ‘\t’&lt;&lt; rel_num&lt;&lt; endl;</li>
-</ul>
-</li>
+<pre><code>int num=108;  
+int *rel_num= &amp; num;  
+* rel_num=118;
+cout&lt;&lt; &amp;num &lt;&lt; &apos;\t&apos;&lt;&lt; rel_num&lt;&lt; endl;</code></pre></li>
 </ul>
 
       
